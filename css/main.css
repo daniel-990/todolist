@@ -1,0 +1,46 @@
+
+.boton_menu{
+    font-size: 23px;
+    color: #fff;
+    background-color: #e53935;
+    padding: 1px 7.5px 3px 8px;
+    position: relative;
+    top: 0px;
+}
+
+.color-negro{
+    color:black !important;
+}
+.color-blanco{
+    color:white !important;
+}
+.sombra{
+    text-shadow: 2px 1px 3px rgb(0 0 0);
+}
+.tamano-img{
+    width: 10%;
+}
+.tamano-img-ico{
+    width: 30%;
+}
+.contenedor{
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+.hr{
+    width: 5%;
+    border: 1px solid #e53935;
+    float: left;
+}
+.color-azul{
+    color:#00c4ff;
+}
+.color-rojo{
+    color: red;
+}
+.contenedor-notas{
+    padding-top: 10px;
+}
+.boton-notas{
+    margin: 1px;
+}
