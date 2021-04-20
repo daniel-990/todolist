@@ -22,7 +22,7 @@
                     </div>
                     <div class="modal-footer">
                         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
-                        <a href="" class="modal-close waves-effect waves-green btn-flat color-rojo">Eliminar</a>
+                        <a href="/back-app/eliminar-nota.php?id=<?php echo $row['id']?>" class="modal-close waves-effect waves-green btn-flat color-rojo">Eliminar</a>
                     </div>
                     </div>
                 </div>
