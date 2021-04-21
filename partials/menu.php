@@ -2,7 +2,7 @@
     <li>
         <div class="user-view">
             <div class="background">
-                <img src="img/list.svg">
+                <img src="img/fondo.jpg">
             </div>
                 <a href="#user"><img class="tamano-img-ico" src="img/app.svg"></a>
                 <a href="#name"><span class="white-text name color-negro color-blanco sombra">Contacto</span></a>

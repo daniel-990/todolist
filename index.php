@@ -16,6 +16,7 @@
                     </div>
             </div>
         </div>
+        <hr class="hr2">
         <?php include "./componentes/render-nota.php"; ?>
     </section>
 <?php

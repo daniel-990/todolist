@@ -32,11 +32,18 @@
     border: 1px solid #e53935;
     float: left;
 }
+.hr2{
+    width: 90%;
+    border: 1px solid #ad1457;
+}
 .color-azul{
     color:#00c4ff;
 }
 .color-rojo{
     color: red;
+}
+.color-blanco{
+    color:white;
 }
 .contenedor-notas{
     padding-top: 10px;

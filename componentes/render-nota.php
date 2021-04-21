@@ -12,18 +12,22 @@
             if($result->num_rows > 0){
                 while($row = $result->fetch_assoc()) {
     ?>
-                <div class="col s12 m6 l3">
-                    <a class="boton-notas waves-effect waves-light btn modal-trigger purple darken-1" href="#modal<?php echo $row['id']; ?>"><i class="large material-icons">create</i> <?php echo $row['nombre_nota']; ?></a>
-                    <div id="modal<?php echo $row['id']; ?>" class="modal modal-fixed-footer">
-                    <div class="modal-content">
-                        <h4><?php echo $row['nombre_nota']; ?></h4>
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/fondo.jpg">
+                        </div>
+                        <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4"><?php echo $row['nombre_nota']; ?><i class="material-icons right">more_vert</i></span>
+                        <p>
+                            <a href="/back-app/eliminar-nota.php?id=<?php echo $row['id']?>" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">delete</i></a>
+                        </p>
+                        </div>
+                        <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4"><?php echo $row['nombre_nota']; ?><i class="material-icons right">close</i></span>
                         <p><?php echo $row['nota']; ?></p>
-                        <p><?php echo $row['fecha']; ?></p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
-                        <a href="/back-app/eliminar-nota.php?id=<?php echo $row['id']?>" class="modal-close waves-effect waves-green btn-flat color-rojo">Eliminar</a>
-                    </div>
+                        <p>Fecha: <span class="badge green color-blanco"><?php echo $row['fecha']; ?></span></p>
+                        </div>
                     </div>
                 </div>
     <?php

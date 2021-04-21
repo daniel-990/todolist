@@ -2,7 +2,6 @@ $(document).ready(function(){
     //sendData();
     //setInterval(getData,1000);
     $('.sidenav').sidenav();
-    $('.modal').modal();
 });
 
 const sendData = () => {
