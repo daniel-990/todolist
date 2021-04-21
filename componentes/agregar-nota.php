@@ -9,13 +9,13 @@
         if($respuesta == ""){
             echo "";
         }else{
-            echo '<br><h4 class=""><i class="fas fa-check-double color-azul"></i> '.$respuesta.'</h4>';
+            echo '<br><h4 class="alerta"><i class="fas fa-check-double color-azul"></i> '.$respuesta.'</h4>';
         }
 
         if($respuestaError == ""){
             echo "";
         }else{
-            echo '<br><h4 class=""><i class="fas fa-exclamation-triangle color-rojo"></i> '.$respuestaError.'</h4>';
+            echo '<br><h4 class="alerta"><i class="fas fa-exclamation-triangle color-rojo"></i> '.$respuestaError.'</h4>';
         }
     }else{
         echo "";

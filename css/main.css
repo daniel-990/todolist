@@ -45,6 +45,9 @@
 .color-blanco{
     color:white;
 }
+.alerta{
+    margin-left: 0.7rem;
+}
 .contenedor-notas{
     padding-top: 10px;
 }
