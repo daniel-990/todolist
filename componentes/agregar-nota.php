@@ -2,11 +2,11 @@
 
     session_start(); //se inicia la variable de sesion
 
-    if(isset($_SESSION['user_id'])){
-        header('Location: https://listasdetareas.herokuapp.com/');
-    } else {
-        header('Location: https://listasdetareas.herokuapp.com/login.php');
-    }
+    // if(isset($_SESSION['user_id'])){
+    //     header('Location: https://listasdetareas.herokuapp.com/');
+    // } else {
+    //     header('Location: https://listasdetareas.herokuapp.com/login.php');
+    // }
 
     error_reporting(E_ALL ^ E_NOTICE);
 
