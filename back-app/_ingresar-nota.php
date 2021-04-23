@@ -14,9 +14,8 @@
                 $sql = "INSERT INTO todolist (nombre_nota, nota, IdUser) VALUES ('$nombreNota','$nota', '$IdUser')";
                 if(mysqli_query($conexion, $sql)){
                     header("Location: https://listasdetareas.herokuapp.com/index.php?mensaje=Nota guardada");
-                    exit;
                 }else{
-                    echo "error!";
+                    header("Location: https://listasdetareas.herokuapp.com/index.php?mensajeError=La nota no se genero");
                 }
                 mysqli_close($conexion);
             }

@@ -2,12 +2,6 @@
 
     session_start(); //se inicia la variable de sesion
 
-    // if(isset($_SESSION['user_id'])){
-    //     header('Location: https://listasdetareas.herokuapp.com/');
-    // } else {
-    //     header('Location: https://listasdetareas.herokuapp.com/login.php');
-    // }
-
     error_reporting(E_ALL ^ E_NOTICE);
 
     if(!empty($_GET)){
@@ -34,6 +28,14 @@
     }
 ?>
 <form id="ingresar-nota" class="col s12" method="POST" action="./back-app/_ingresar-nota.php" autocomplete="off">
+    <?php 
+            if(isset($_SESSION['user_id'])){
+                echo "Usuario logueado: <span class='fondo_'>".$_SESSION['user_id']."</span><br>";
+            } else {
+                header('Location: https://listasdetareas.herokuapp.com/login.php');
+                //echo "usuario sin login";
+            }
+    ?>
     <div class="row">
         <div class="input-field col s6">
             <input id="input_nombre" name="nombre_nota" type="text" data-length="10">

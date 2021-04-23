@@ -22,7 +22,7 @@
                         $result = $conexion->query($sql);
                             if($result->num_rows > 0){
                                 while($row = $result->fetch_assoc()) {
-                                    header("Location: https://listasdetareas.herokuapp.com/registro.php?mensaje=Usuario: ".$registroNombreUser." registrado&IdUser=".$row['IdUser']);
+                                    header("Location: https://listasdetareas.herokuapp.com/login.php?mensaje=Usuario: ".$registroNombreUser." registrado&IdUser=".$row['IdUser']);
                                     //header("Location: http://localhost/todolist/index.php?mensaje=Usuario: ".$registroNombreUser." registrado&IdUser=".$row['IdUser']);
                                 }
                             }else{}

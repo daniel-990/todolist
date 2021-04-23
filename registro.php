@@ -1,29 +1,17 @@
 <?php
     include "./partials/header.php";
 ?>
-    
     <section class="contenedor">
         <?php include "./partials/menu.php"; ?>
         <div class="container">
             <h3><img class="tamano-img" src="img/app-icon.svg"> Registro de usuario</h3>
             <?php 
-                error_reporting(E_ALL ^ E_NOTICE);
-
                 if(!empty($_GET)){
-                    
-                    $respuesta = $_GET['mensaje'];
                     $respuestaError = $_GET['mensajeError'];
-
-                    if($respuesta == ""){
-                        echo "";
-                    }else{
-                        echo '<br><h4 class="alerta"><i class="fas fa-check-double color-azul"></i> '.$respuesta.'</h4>';
-                    }
-
                     if($respuestaError == ""){
                         echo "";
                     }else{
-                        echo '<br><h4 class="alerta"><i class="fas fa-exclamation-triangle color-rojo"></i> '.$respuestaError.'</h4>';
+                        echo '<h4 class="alerta"><i class="fas fa-exclamation-triangle color-rojo"></i> '.$respuestaError.'</h4>';
                     }
                 }else{
                     echo "";

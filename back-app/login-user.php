@@ -3,12 +3,6 @@
     require '../constantes/conectar.php';
 
     session_start(); //se inicia la variable de sesion
-
-    // if(isset($_SESSION['user_id'])){
-    //     header('Location: https://listasdetareas.herokuapp.com/');
-    // } else {
-    //     header('Location: https://listasdetareas.herokuapp.com/login.php');
-    // }
  
     if (isset($_POST)) {
      
@@ -29,12 +23,12 @@
                             header('Location: https://listasdetareas.herokuapp.com/');
                         } else {
                             //echo '<p class="error">Usuario o contraseña incorrectos</p>';
-                            header('Location: https://listasdetareas.herokuapp.com/login.php');
+                            header('Location: https://listasdetareas.herokuapp.com/login.php?mensajeError=Usuario o contraseña incorrectos');
                         }
                     }
                   }
               }else{
-                echo "error";
+                header('Location: https://listasdetareas.herokuapp.com/login.php?mensajeError2=Usuario no existe');
               }
         }
     }

@@ -32,7 +32,7 @@
                 </div>
     <?php
                         if (!$result) {
-                            echo "error";
+                            echo "error!";
                         } else {
                             // echo $_SESSION['user_id'];
                             // echo $row['nombre_nota'];
@@ -40,7 +40,7 @@
                         }
                     }
                 }else{
-                  echo "error";
+                  echo "Sin datos para mostrar, por favor crea una nota nueva";
                 }
             }
         }
