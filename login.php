@@ -4,7 +4,7 @@
     <section class="contenedor">
         <?php include "./partials/menu.php"; ?>
         <div class="container">
-            <h3><img class="tamano-img" src="img/app-icon.svg"> Login de usuario</h3>
+            <h3><img class="tamano-img" src="img/app-icon.svg"> Login de usuario <small>Para usar la app por favor inicia sesion o registra una cuenta</small></h3>
             <div class="row">
                 <form class="col s12" action="./back-app/login-user.php" method="POST">
                     <div class="row">
