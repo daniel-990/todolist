@@ -39,7 +39,7 @@
                     if($mensaje == ""){
                         echo "";
                     }else{
-                        echo '<br><h4 class="alerta"><i class="fas fa-check-double color-azul"></i> '.$respuesta.'</h4>';
+                        echo '<br><h4 class="alerta"><i class="fas fa-check-double color-azul"></i> '.$mensaje.'</h4>';
                     }
 
                 }else{
