@@ -1,16 +1,16 @@
 <div class="container contenedor-notas">
     <div class="row">
     <?php 
-        
+        session_start(); //se inicia la variable de sesion
         require './constantes/conectar.php';
 
-        $sql = "SELECT id, nombre_nota, nota, fecha FROM todolist";
-        $datos = array();
-        $result = $conexion->query($sql);
-
-
-            if($result->num_rows > 0){
-                while($row = $result->fetch_assoc()) {
+        if (isset($_SESSION['user_id'])) {
+            $session = $_SESSION['user_id'];
+            if ($conexion) {
+                $sql = "SELECT * FROM todolist WHERE IdUser='$session'";
+                $result = $conexion->query($sql);
+                if($result->num_rows > 0){
+                    while($row = $result->fetch_assoc()) {
     ?>
                 <div class="col s12 m6">
                     <div class="card">
@@ -20,7 +20,7 @@
                         <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4"><?php echo $row['nombre_nota']; ?><i class="material-icons right">more_vert</i></span>
                         <p>
-                            <a href="/back-app/eliminar-nota.php?id=<?php echo $row['id']?>" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">delete</i></a>
+                            <a href="/back-app/eliminar-nota.php?id=<?php echo $row['IdTodoList']?>" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">delete</i></a>
                         </p>
                         </div>
                         <div class="card-reveal">
@@ -31,10 +31,19 @@
                     </div>
                 </div>
     <?php
+                        if (!$result) {
+                            echo "error";
+                        } else {
+                            // echo $_SESSION['user_id'];
+                            // echo $row['nombre_nota'];
+                            // echo $row['nota'];
+                        }
+                    }
+                }else{
+                  echo "error";
                 }
-            }else{
-                echo "0 resultados";
             }
+        }
 
     ?>
     </div>

@@ -2,10 +2,12 @@
     include "./partials/header.php";
 ?>
     <section class="contenedor">
+        <!--menu-->
+        <?php include "./partials/menu.php"; ?>
+        <!--menu -->
         <div class="row">
             <div class="col s12 m4 l3">
-                <!--menu-->
-                <?php include "./partials/menu.php"; ?>
+                <!--nada-->
             </div>
             <div class="col s12 m8 l9">
                 <h2 class=""><img class="tamano-img" src="img/app-icon.svg"> TodoList</h2>
