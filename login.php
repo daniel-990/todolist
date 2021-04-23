@@ -23,6 +23,8 @@
                     $mensajeError = $_GET['mensajeError'];
                     $mensajeError2 = $_GET['mensajeError2'];
 
+                    $mensaje = $_GET['mensaje'];
+
                     if($mensajeError == ""){
                         echo "";
                     }else{
@@ -33,6 +35,13 @@
                     }else{
                         echo '<h4 class="alerta"><i class="fas fa-check-double color-azul"></i> '.$mensajeError2.'</h4>';
                     }
+
+                    if($mensaje == ""){
+                        echo "";
+                    }else{
+                        echo '<br><h4 class="alerta"><i class="fas fa-check-double color-azul"></i> '.$respuesta.'</h4>';
+                    }
+
                 }else{
                     echo "";
                 }
