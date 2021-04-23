@@ -26,9 +26,11 @@
                     } else {
                         if (password_verify($password, $row['passregistro'])) {
                             $_SESSION['user_id'] = $row['IdUser'];
-                            echo '<p class="success">Inicio de sesion correcto!</p>'.$row['passregistro'].'<br>'.$_SESSION['user_id'];
+                            //echo '<p class="success">Inicio de sesion correcto!</p>'.$row['passregistro'].'<br>'.$_SESSION['user_id'];
+                            header('Location: https://listasdetareas.herokuapp.com/');
                         } else {
-                            echo '<p class="error">Usuario o contraseña incorrectos</p>';
+                            //echo '<p class="error">Usuario o contraseña incorrectos</p>';
+                            header('Location: https://listasdetareas.herokuapp.com/login.php');
                         }
                     }
                   }
