@@ -8,7 +8,7 @@
         header('Location: https://listasdetareas.herokuapp.com/login.php');
         exit;
     } else {
-        header('Location: https://listasdetareas.herokuapp.com/');
+        //header('Location: https://listasdetareas.herokuapp.com/');
     }
  
     if (isset($_POST)) {

@@ -13,7 +13,7 @@
             if($conexion){
                 $sql = "INSERT INTO todolist (nombre_nota, nota, IdUser) VALUES ('$nombreNota','$nota', '$IdUser')";
                 if(mysqli_query($conexion, $sql)){
-                    header("Location: http://localhost/todolist/index.php?mensaje=Nota guardada");
+                    header("Location: https://listasdetareas.herokuapp.com/index.php?mensaje=Nota guardada");
                     exit;
                 }else{
                     echo "error!";
