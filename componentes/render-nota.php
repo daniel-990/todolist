@@ -20,7 +20,7 @@
                         <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4"><?php echo $row['nombre_nota']; ?><i class="material-icons right">more_vert</i></span>
                         <p>
-                            <a href="/back-app/eliminar-nota.php?id=<?php echo $row['IdUser']?>" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">delete</i></a>
+                            <a href="/back-app/eliminar-nota.php?id=<?php echo $row['IdTodoList']?>" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">delete</i></a>
                         </p>
                         </div>
                         <div class="card-reveal">
