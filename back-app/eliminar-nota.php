@@ -7,7 +7,7 @@
     if($conexion){
         if(isset($_POST)){
 
-            $sql = "DELETE FROM todolist WHERE id='$id'";
+            $sql = "DELETE FROM todolist WHERE IdUser='$id'";
             if(mysqli_query($conexion, $sql)){
                 header("Location: https://listasdetareas.herokuapp.com/");
                 exit;
