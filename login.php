@@ -17,9 +17,9 @@
         <div class="container">
             <br>
             <code>
-                datos de prueba:<br>
-                Usuario: test@correo.com<br>
-                Pass: 12345
+                <strong>Datos de prueba</strong><br>
+                <strong>Usuario:<strong> test@correo.com<br>
+                <strong>Pass:</strong> 12345
             </code>
             <hr>
             <h3><img class="tamano-img" src="img/app-icon.svg"> Login de usuario <br><small class="mensaje_">Para usar la app por favor inicia sesion o registra una cuenta</small></h3>
