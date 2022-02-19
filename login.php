@@ -15,6 +15,13 @@
     <section class="contenedor">
         <?php include "./partials/menu.php"; ?>
         <div class="container">
+            <br>
+            <code>
+                datos de prueba:<br>
+                Usuario: test@correo.com<br>
+                Pass: 12345
+            </code>
+            <hr>
             <h3><img class="tamano-img" src="img/app-icon.svg"> Login de usuario <br><small class="mensaje_">Para usar la app por favor inicia sesion o registra una cuenta</small></h3>
             <?php 
                 if(!empty($_GET)){
