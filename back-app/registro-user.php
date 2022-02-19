@@ -23,7 +23,7 @@
                 // Validamos si hay resultados
                 if(mysqli_num_rows($result)>0){
                     // Si es mayor a cero imprimimos que ya existe el usuario
-                    header("Location: ./index.php?mensaje=Ya existe el usuario:<strong> ".$registroNombreUser." </strong>que intenta registrar");
+                    header("Location: https://listasdetareas.herokuapp.com/registro.php?mensajeError=Ya existe el usuario:<strong> ".$registroNombreUser." </strong>que intenta registrar");
                     exit;
                 }else{
 
