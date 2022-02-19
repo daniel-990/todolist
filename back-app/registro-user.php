@@ -17,7 +17,7 @@
             if($conexion){
 
                 // Realizamos la consulta para saber si coincide con uno de esos criterios
-                $sql = "INSERT INTO registrouser (correoregistro, passregistro) VALUES ('$registroNombreUser','$password')";
+                $sqlRevisar = "INSERT INTO registrouser (correoregistro, passregistro) VALUES ('$registroNombreUser','$password')";
                 $result = mysqli_query($conexion, $sqlRevisar);
                 
                 // Validamos si hay resultados
